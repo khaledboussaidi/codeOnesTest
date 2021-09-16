@@ -8,10 +8,10 @@
 		<version>2.5.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.ponctuiation</groupId>
-	<artifactId>ponctuiation-service</artifactId>
+	<groupId>com.ponctuation</groupId>
+	<artifactId>ponctuation-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ponctuiation-service</name>
+	<name>ponctuation-service</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
