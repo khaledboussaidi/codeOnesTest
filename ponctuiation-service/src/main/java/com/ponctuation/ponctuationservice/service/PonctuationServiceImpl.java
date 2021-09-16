@@ -1,5 +1,8 @@
 package com.ponctuation.ponctuationservice.service;
 
+import org.springframework.stereotype.Service;
+
+@Service
 public class PonctuationServiceImpl implements PonctuationService{
     @Override
     public int countPonctuationNumber(String text) {
