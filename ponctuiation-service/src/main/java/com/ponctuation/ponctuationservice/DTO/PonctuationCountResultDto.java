@@ -1,5 +1,7 @@
 package com.ponctuation.ponctuationservice.DTO;
 
+/* data transfer object of results punctuation */
+
 public class PonctuationCountResultDto {
     private  int value;
 

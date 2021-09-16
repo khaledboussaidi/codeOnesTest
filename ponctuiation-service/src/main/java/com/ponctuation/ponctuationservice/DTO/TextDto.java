@@ -1,4 +1,5 @@
 package com.ponctuation.ponctuationservice.DTO;
+/* data transfer object of text */
 
 public class TextDto {
 
@@ -7,6 +8,7 @@ public class TextDto {
     public String getValue() {
         return value;
     }
+
 
     public void setValue(String value) {
         this.value = value;

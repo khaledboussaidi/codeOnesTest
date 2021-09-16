@@ -15,13 +15,14 @@ import org.springframework.web.bind.annotation.*;
 public class PonctuationController {
     @Autowired
     PonctuationService ponctuationService;
-
+    /* definition of our  ponctuation counter endpoint rest  */
     @PostMapping("/count")
     public ResponseEntity<?> countPonctuation(@RequestBody TextDto textDto){
         PonctuationCountResultDto ponctuationCountResultDto = new PonctuationCountResultDto();
+        System.out.println(textDto);
         try{
              ponctuationCountResultDto.setValue(this.ponctuationService.countPonctuationNumber(textDto.getValue()));
-            return new ResponseEntity<>(ponctuationCountResultDto,HttpStatus.CREATED);
+            return new ResponseEntity<>(ponctuationCountResultDto,HttpStatus.OK);
         }catch (Exception e){
             return new ResponseEntity<>(e,HttpStatus.INTERNAL_SERVER_ERROR);
         }
